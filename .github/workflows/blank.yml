@@ -1,7 +1,6 @@
 name: ymlOierDonoso
 
-on:
-  workflow_dispatch
+on: workflow_dispatch
 
 jobs:
   Project-Name:

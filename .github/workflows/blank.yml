@@ -1,9 +1,7 @@
-name: ymlOierDonoso
-
-on: workflow_dispatch
-
+name: ls -l
+on: [push]
 jobs:
-  Project-Name:
+  list-elements:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "${{ github.event.repository.name }}"
+      - run: ls -l

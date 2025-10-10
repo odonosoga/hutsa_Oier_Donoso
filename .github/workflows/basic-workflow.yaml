@@ -1,11 +1,15 @@
 name: Basic Workflow
 on:
   push:
-   branches: feature/basic-workflow
+    branches: feature/basic-workflow
 jobs:
   do-things:
     name: Do Things
     runs-on: ubuntu-latest
     steps:
     - name: The Thing I've Done
-      run: echo "Burutu dut!"
+      run: echo "Burutu da!"
+    - name: An Error I made
+      run: |
+        echo "Errore bat egon da!"
+        exit 1
